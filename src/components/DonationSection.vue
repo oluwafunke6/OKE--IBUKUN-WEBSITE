@@ -12,7 +12,7 @@ const payWithPaystack = () => {
   paystack.newTransaction({
     key: import.meta.env.VITE_PAYSTACK_PUBLIC_KEY,
     email: email.value,
-    amount: Number(amount.value) * 100,
+    amount: Number(amount.value) ,
     currency: "NGN",
 
     onSuccess: (transaction) => {
